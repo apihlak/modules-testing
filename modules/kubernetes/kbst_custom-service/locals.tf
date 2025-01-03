@@ -1,0 +1,1 @@
+../kbst_kustomization/locals.tf
