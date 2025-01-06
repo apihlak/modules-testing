@@ -1,4 +1,4 @@
-## TEST
+### TEST
 module "label" {
   source = "git::ssh://git@github.com/coingaming/infra-modules.git//modules/global/label?ref=main"
 
