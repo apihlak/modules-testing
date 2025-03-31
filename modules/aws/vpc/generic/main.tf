@@ -1,6 +1,6 @@
 # Hello
 module "label" {
-  source = "git::ssh://git@github.com/coingaming/infra-modules.git?ref=modules/global/label/v1.0.0"
+  source = "git::ssh://git@github.com/apihlak/modules-testing.git?ref=modules/global/label/v1.0.0"
   context = module.this.context
 }
 
