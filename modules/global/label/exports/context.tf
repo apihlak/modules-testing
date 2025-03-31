@@ -14,7 +14,7 @@
 #
 
 module "this" {
-  source = "git::ssh://git@github.com/apihlakj/modules-testing.git?ref=modules/global/label/v1.0.0"
+  source = "git::ssh://git@github.com/apihlak/modules-testing.git?ref=modules/global/label/v1.0.0"
 
   enabled             = var.enabled
   namespace           = var.namespace
