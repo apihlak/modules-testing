@@ -1,9 +1,8 @@
 #
-# ONLY EDIT THIS FILE IN github.com/coingaming/poc-terragrunt-infra
+# ONLY EDIT THIS FILE IN infra-modules/modules/global/label/exports/context.tf
 # All other instances of this file should be a symlink of that one
 #
 #
-# Create symlink this file from https://github.com/coingaming/poc-terragrunt-infra/tree/modules/global/label/exports/context.tf
 # Modules should access the whole context as `module.this.context`
 # to get the input variables with nulls for defaults,
 # for example `context = module.this.context`,
@@ -15,7 +14,7 @@
 #
 
 module "this" {
-  source = "git::ssh://git@github.com/coingaming/infra-modules.git//modules/global/label?ref=main"
+  source = "git::ssh://git@github.com/coingaming/infra-modules.git?ref=modules/global/label/v1.0.0"
 
   enabled             = var.enabled
   namespace           = var.namespace
@@ -39,7 +38,7 @@ module "this" {
 
 }
 
-# Copy contents of cloudposse/terraform-null-label/variables.tf here
+# Copy contents of infra-modules/modules/global/label/variables.tf here
 
 variable "context" {
   type = any
@@ -270,4 +269,4 @@ variable "descriptor_formats" {
     EOT
 }
 
-#### End of copy of cloudposse/terraform-null-label/variables.tf
+#### End of copy of infra-modules/modules/global/label/variables.tf

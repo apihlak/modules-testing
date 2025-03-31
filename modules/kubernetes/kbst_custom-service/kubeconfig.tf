@@ -1,1 +1,0 @@
-../kbst_kustomization/kubeconfig.tf

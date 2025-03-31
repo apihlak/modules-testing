@@ -1,1 +1,0 @@
-../kbst_kustomization/variables.tf
